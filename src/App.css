@@ -39,3 +39,45 @@ h1 {
 .pokemon-card p {
   margin: 0.2rem;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  overflow-x: hidden;
+}
+
+.background-pokeball1 {
+  position: fixed;
+  top: -400px;
+  right: -400px; 
+  width: 1000px; 
+  height: 1000px; 
+  background-image: url('pokeball.png'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: rotatePokeball 10s linear infinite;
+  z-index:-1 ;
+}
+
+.background-pokeball2 {
+  position: fixed;
+  bottom: -150px;
+  left: -150px; 
+  width: 500px; 
+  height: 500px; 
+  background-image: url('pokeball.png'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: rotatePokeball 10s linear infinite;
+  z-index:-1 ;
+}
+
+@keyframes rotatePokeball {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

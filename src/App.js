@@ -27,6 +27,8 @@ function App() {
 
   return (
     <div className="App">
+      <div className="background-pokeball1" />
+      <div className="background-pokeball2" />
       <FilterPokemon types={types} onFilterChange={handleFilterChange} />
       <PokemonList filter={filter} />
     </div>
